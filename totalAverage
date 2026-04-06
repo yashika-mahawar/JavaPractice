@@ -1,22 +1,23 @@
 import java.util.*;
+
 public class Main {
-    public static double printAverage(int n){
-Scanner sc = new Scanner(System.in);
-         int sum = 0;
+    public static double printAverage(int n, Scanner sc){
+        int sum = 0;
+
         for(int i = 1; i <= n; i++) {
             int num = sc.nextInt();
             sum = sum + num;
         }
-         
-        return (double)sum / n;
-    }
-    public static void main(String args[]) {
-        Scanner sc=new Scanner(System.in);
-         int n = sc.nextInt(); 
-        
-        double avg =printAverage(n);
-        System.out.println("Average is: " + avg);
-        
 
+        return (double) sum / n;
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        double avg = printAverage(n, sc);
+        System.out.println("Average is: " + avg);
     }
 }
